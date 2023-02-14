@@ -29,32 +29,29 @@
   <body>
     <!--Header Area-->
     <div class="header bg-dark">
-        <div class="container-fluid">
-            <div class="row cols-3 header-row">
-              <div class="col-auto logo_spacer">
-                <!--This is the leading value for the logo alignment since the logo is set to backgorund image; padding is unusable-->
-              </div>
-                <!--"p"adding utility in "x" direction of 0-->
-                <div class="col-auto px-0">
-                  <div class="logo"></div>
-                </div>
-                <!--The px-1 utility is to remove the default styling from the column (its the borders width fyi)-->
-                <div class="col-auto px-0">
-                  <p class="divider"></p>
-                </div>
-                <div class="col-auto px-0">
-                  <!--Title Text-->
-                  <div class="text-light" style="flex-wrap: inherit;" >
-                    <p class="title-styling" style="align-content: center;">Owner's Portal</p>
-                  </div>
-                </div>
-
-                
-    
-                
-
+      <div class="container-fluid">
+        <div class="row cols-3 header-row">
+          <div class="col-auto logo_spacer">
+            <!--This is the leading value for the logo alignment since the logo is set to backgorund image; padding is unusable-->
+          </div>
+          <!--"p"adding utility in "x" direction of 0-->
+          <div class="col-auto px-0">
+            <div class="logo"></div>
+          </div>
+          <!--The px-1 utility is to remove the default styling from the column (its the borders width fyi)-->
+          <div class="col-auto px-0">
+            <p class="divider"></p>
+          </div>
+          <div class="col-auto px-0">
+            <!--Title Text-->
+            <div class="text-light" style="flex-wrap: inherit">
+              <p class="title-styling" style="align-content: center">
+                Owner's Portal
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!--
@@ -75,21 +72,32 @@
           <div class="col-md-1 col-0"></div>
 
           <div class="col-md-6 col-12" style="padding: 0px">
-            <div class="card">
-              <h3>H3 Test</h3>
-              <h5>H5 Test</h5>
-              <H6>H6 Test</H6>
+            <div class="card card-styling">
+              <div class="card-content-align">
 
-              <div class="card-text">
-                <p class="bodyGrey_1">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore beatae quis quam quo. Earum voluptatem iusto nam doloribus consectetur sequi reprehenderit facilis. Dignissimos delectus alias doloribus placeat laudantium. At, nemo nam? Excepturi quibusdam ullam labore earum dolorem nam ratione cupiditate eaque ut quos, illum nemo ad quis placeat temporibus impedit?
-                </p>
+                <div class="nissanid_branding px-0 mx-0">
 
-                <p class="bodyRed_1">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore beatae quis quam quo. Earum voluptatem iusto nam doloribus consectetur sequi reprehenderit facilis. Dignissimos delectus alias doloribus placeat laudantium. At, nemo nam? Excepturi quibusdam ullam labore earum dolorem nam ratione cupiditate eaque ut quos, illum nemo ad quis placeat temporibus impedit?
-                </p>
+                </div>
+                
+                <h5 class="px-0 mx-0" style="padding: 20px 0px 20px 0px;">Reset Password</h5>
+
+                <div class="card-text">
+                  <p class="bodyRed_1" style="padding-bottom: 10px;">
+                    Secure your account with a strong and memorable password. Please ensure your password contains a minimum of eight characters from at least three of the following categories.
+                  </p>
+
+                  
+                    <ul class="passCriteria">
+                      <li class="bodyRed_1">This is some criteria</li>
+                      <li class="bodyRed_1">This is some criteria</li>
+                      <li class="bodyRed_1">This is some criteria</li>
+                      <li class="bodyRed_1">This is some criteria</li>
+                    </ul>
+                  
+                </div>
+
               </div>
-
+              <!--End Content Align-->
             </div>
           </div>
 
@@ -109,7 +117,7 @@
       </div>
     </div>
 
-    <!--"STICKY" Footer
+    <!--"STICKY" Footer - (For pages with less content than full view height)
     <div class="container-fluid">
       <div class="navbar fixed-bottom bg-dark text-light">
         <div class="row">

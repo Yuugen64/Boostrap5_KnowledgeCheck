@@ -91,6 +91,10 @@ h6{
     /*"leading"/line-spacing is 17(?)*/
 }
 
+.passCriteria{
+    padding-left: 40px;
+}
+
 /*===== Nissan Logo =====*/
 .logo{
     margin: 0px;
@@ -117,6 +121,8 @@ h6{
     font-weight: 300;
 }
 
+
+
 .divider{
     margin-left: 20px;
     padding-left: 20px;
@@ -125,6 +131,26 @@ h6{
     width: auto;
 }
 /*===== ========== =====*/
+
+/*===== Card Styling =====*/
+.card-styling{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.card-content-align{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.nissanid_branding{
+    margin-top: 40px;
+    width: 87px;
+    height: 7px;
+    
+    background-image: url("assets/Branding_83x7.png");
+}
+/*===== ========= =====*/
 
 /*===== Footer =====*/
 .bottom-bar{
@@ -162,7 +188,7 @@ h6{
 
     /*===== Nissan Styling - MOBILE =====*/
     h3{
-        font-weight: light;
+        font-weight: 300;
         font-size: 28pt;
         color:#3472e5;
         letter-spacing: 0;
@@ -171,7 +197,7 @@ h6{
     }
     
     h5{
-        font-weight: light;
+        font-weight: 300;
         font-size: 16pt;
         color:#3472e5;
         letter-spacing: 0;
@@ -180,7 +206,7 @@ h6{
     }
     
     h6{
-        font-weight: light;
+        font-weight: 300;
         font-size: 14pt;
         color:#3472e5;
         letter-spacing: 0;
@@ -202,6 +228,10 @@ h6{
     color: #C3002F;
     letter-spacing: 0;
     /*justify left or centered, paragraph spacing is 10(px?), leading */
+}
+
+.passCriteria{
+    padding-left: 40px;
 }
 
 .textLink{
@@ -227,7 +257,6 @@ h6{
     padding: 0px;
     margin: 0px;
     width: 15px;
-    background-color: #06255f;
 }
 /*===== ========== =====*/
 
@@ -249,6 +278,26 @@ h6{
     width: auto;
 }
 /*===== ========== =====*/
+
+/*===== Card Styling =====*/
+.card-styling{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.card-content-align{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nissanid_branding{
+    margin-top: 40px;
+    width: 87px;
+    height: 7px;
+    
+    background-image: url("assets/Branding_83x7.png");
+}
+/*===== ========= =====*/
 
 /*===== Footer =====*/
 .bottom-bar{
