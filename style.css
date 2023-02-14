@@ -39,7 +39,7 @@ p{
 
 
 /*===========================================*/
-/*===== Nissan Styling - DESKTOP/TABLET =====*/
+/*===== Nissan Styling =====*/
 h3{
     font-weight: light;
     font-size: 28pt;
@@ -142,39 +142,12 @@ h6{
 
 
 /*===== Bootstrap 5 breakpoints =====*/
-/*These go DOWN, i.e. they apply to the specific query and LOWER screen sizes!*/
+/*These go DOWN, i.e. they apply to the specific query and ALL LOWER screen sizes!*/
 /*(xs breakpoint) X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {  }
 
 /*(sm breakpoint)  Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { 
-    /*===== Nissan Styling - MOBILE =====*/
-h3{
-    font-weight: light;
-    font-size: 28pt;
-    color:#3472e5;
-    letter-spacing: 0;
-    
-    /*justify left,  can "inline" white color per element*/
-}
-
-h5{
-    font-weight: light;
-    font-size: 16pt;
-    color:#3472e5;
-    letter-spacing: 0;
-    
-    /*justify left, can "inline" white color per element*/
-}
-
-h6{
-    font-weight: light;
-    font-size: 14pt;
-    color:#3472e5;
-    letter-spacing: 0;
-    
-    /*justify left, can "inline" white color per element*/
-}
 
 /*===== Bootstrap Alternatives =====*/
 .header{
@@ -187,32 +160,33 @@ h6{
 }
 /*===== ========== =====*/
 
-h3{
-    font-weight: light;
-    font-size: 28pt;
-    color:#eade5f;
-    letter-spacing: 0;
+    /*===== Nissan Styling - MOBILE =====*/
+    h3{
+        font-weight: light;
+        font-size: 28pt;
+        color:#3472e5;
+        letter-spacing: 0;
+        
+        /*justify left,  can "inline" white color per element*/
+    }
     
-    /*justify left,  can "inline" white color per element*/
-}
-
-h5{
-    font-weight: light;
-    font-size: 16pt;
-    color:#eade5f;
-    letter-spacing: 0;
+    h5{
+        font-weight: light;
+        font-size: 16pt;
+        color:#3472e5;
+        letter-spacing: 0;
+        
+        /*justify left, can "inline" white color per element*/
+    }
     
-    /*justify left, can "inline" white color per element*/
-}
-
-h6{
-    font-weight: light;
-    font-size: 14pt;
-    color:#eade5f;
-    letter-spacing: 0;
-    
-    /*justify left, can "inline" white color per element*/
-}
+    h6{
+        font-weight: light;
+        font-size: 14pt;
+        color:#3472e5;
+        letter-spacing: 0;
+        
+        /*justify left, can "inline" white color per element*/
+    }
 
 .bodyGrey_1{
     font-weight: regular;
@@ -242,39 +216,36 @@ h6{
 .logo{
     margin: 0px;
     padding-right: 0px;
-    background-image: url("assets/IconBG_81x67.png");
-    width: 81px;
-    height: 67px;
+    background-image: url("assets/IconBG_49x40.png");
+
+    /*At 60% size of the desktop variant*/
+    width: 49px;
+    height: 40px;
 
 }
 .logo_spacer{
     padding: 0px;
     margin: 0px;
-    width: 165px;
+    width: 15px;
+    background-color: #06255f;
 }
 /*===== ========== =====*/
 
 /*===== Vertical Border + "Title"*/
 .title-styling{
-    /*This needs to match the padding-right from the "logo"*/
     margin: 0px;
-    margin-left: 0px;
+    padding: 0px;
+    padding-top: 12px; /*This has to be set manually based on *logo height* as largest reference relative to text size, to center the title - somehow flex-wrap was interfering with "align-items: center"*/
 
-    /*Need to subtract font-size(px) from "logo" height - then add padding evenly to top & bottom to == logo height.*/
-    padding: 0px;    /*right-side padding is just because*/
-    padding-left: 0px;
-    
-
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 300;
-
 }
 
 .divider{
-    margin-left: 20px;
-    padding-left: 20px;
+    margin-left: 15px;
+    padding-left: 15px;
     border-left: solid 2px white;
-    height: 67px;
+    height: 40px;
     width: auto;
 }
 /*===== ========== =====*/
@@ -294,41 +265,7 @@ h6{
 
 /*(xl breakpoint)  X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) { 
-/*===== Nissan Logo =====*/
-.logo{
-    margin: 0px;
-    padding-right: 0px;
-    background-image: url("assets/IconBG_81x67.png");
-    width: 81px;
-    height: 67px;
 
-}
-.logo_spacer{
-    padding: 0px;
-    margin: 0px;
-    width: 165px;
-}
-/*===== ========== =====*/
-
-/*===== Vertical Border + "Title"*/
-.title-styling{
-    margin: 0px;
-    padding: 0px;
-    padding-top: 25px; /*This has to be set manually based on *logo height* as largest reference relative to text size, to center the title - somehow flex-wrap was interfering with "align-items: center"*/
-
-    font-size: 17px;
-    font-weight: 300;
-}
-
-.divider{
-    margin-left: 20px;
-    padding-left: 20px;
-    border-left: solid 2px white;
-    height: 67px;
-    width: auto;
-}
-/*===== ========== =====*/
-/*===== ========== =====*/
  }
 
 /*(xxl breakpoint)  XX-Large devices (larger desktops) */
