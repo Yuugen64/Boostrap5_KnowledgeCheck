@@ -1,3 +1,4 @@
+/*===== RESET =====*/
 * {
     margin: 0px;
     padding: 0px;
@@ -13,16 +14,74 @@ html, body {
 
     background-color: #5AB1BB;
 }
+/*===== ========== =====*/
 
-.box{
-    margin: 0px 0px 0px 8vw;
-    padding: 0px;
-    border-color: #B5F44A;
-    background-color: #3A506B;
-    width: 50px;
-    height: 50px;
+/*===== Nissan Styling - DESKTOP/TABLET =====*/
+h3{
+    font-weight: light;
+    font-size: 28pt;
+    color:#eade5f;
+    letter-spacing: 0;
+    
+    /*justify left,  can "inline" white color per element*/
 }
 
+h5{
+    font-weight: light;
+    font-size: 16pt;
+    color:#eade5f;
+    letter-spacing: 0;
+    
+    /*justify left, can "inline" white color per element*/
+}
+
+h6{
+    font-weight: light;
+    font-size: 14pt;
+    color:#eade5f;
+    letter-spacing: 0;
+    
+    /*justify left, can "inline" white color per element*/
+}
+
+.bodyGrey_1{
+    font-weight: regular;
+    font-size: 13pt;
+    color: #5c5c5c;
+    letter-spacing: 0;
+    /*justify left or centered, paragraph spacing is 10(px?), leading */
+}
+
+.bodyRed_1{
+    font-weight: regular;
+    font-size: 11pt;
+    color: #C3002F;
+    letter-spacing: 0;
+    /*justify left or centered, paragraph spacing is 10(px?), leading */
+}
+
+.textLink{
+    font-weight: regular;
+    font-size: 14pt;
+    color: #343434;
+    letter-spacing: 0;
+    /*"leading"/line-spacing is 17(?)*/
+}
+/*===== ========== =====*/
+
+
+
+/*===== Nissan Logo =====*/
+.logo{
+    margin: 0px 0px 0px 8vw;
+    padding: 0px;
+    background-image: url("assets/IconBG_81x67.png");
+    width: 81px;
+    height: 67px;
+}
+/*===== ========== =====*/
+
+/*===== Vertical Border + "Title"*/
 .brand-styling{
     margin: 0px;
     margin-left: 10px;
@@ -33,18 +92,91 @@ html, body {
     font-weight: 300;
 
 }
+/*===== ========== =====*/
 
+/*===== Footer =====*/
 .bottom-bar{
     margin-top: 10vh;
 }
+/*===== ========== =====*/
+
+
+
+
+
+/*===== Bootstrap 5 breakpoints =====*/
+/*These go DOWN, i.e. they apply to the specific query and LOWER screen sizes!*/
+/*(xs breakpoint) X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {  }
+
+/*(sm breakpoint)  Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    /*===== Nissan Styling - MOBILE =====*/
+h3{
+    font-weight: light;
+    font-size: 28pt;
+    color:#3472e5;
+    letter-spacing: 0;
+    
+    /*justify left,  can "inline" white color per element*/
+}
+
+h5{
+    font-weight: light;
+    font-size: 16pt;
+    color:#3472e5;
+    letter-spacing: 0;
+    
+    /*justify left, can "inline" white color per element*/
+}
+
+h6{
+    font-weight: light;
+    font-size: 14pt;
+    color:#3472e5;
+    letter-spacing: 0;
+    
+    /*justify left, can "inline" white color per element*/
+}
+/*===== ========== =====*/
+ }
+
+/*(md breakpoint)  Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {  }
+
+/*(lg breakpoint)  Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {  }
+
+/*(xl breakpoint)  X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {  }
+
+/*(xxl breakpoint)  XX-Large devices (larger desktops) */
+/* No media query since the xxl breakpoint has no upper bound on its width */
+/*===== ========== =====*/
+
+
+
 
 
 /* ===== Color Palette ===== */
-#dOnOtUsE{
+#CompColors{
+    color: #C3002F;
+    color: #000000;
+    color: #343434;
+    color: #EEEEEE;
+    color: #FFFFFF;
+}
+
+#dOnOtUsE_TESTING{
     color: #B5F44A;
     color: #FBF9FF;
     color: #5AB1BB;
     color: #3A506B;
     color: #0B132B;
+
+    /*Ikazuchi Yellow*/
+    color:#eade5f;
+    /*Bayside Blue*/
+    color: #3472e5;
 }
 /* ===== ========== ===== */
