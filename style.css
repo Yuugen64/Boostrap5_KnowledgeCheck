@@ -14,8 +14,30 @@ html, body {
 
     background-color: #5AB1BB;
 }
+
+p{
+    /*p-tag override for vertical line*/
+    margin: 0px;
+    padding: 0px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
 /*===== ========== =====*/
 
+/*===== Bootstrap Alternatives =====*/
+.header{
+    padding: 0px;
+    margin: 0px;
+}
+
+.header-row{
+    padding: 10px 0px 10px 0px; /*Adding some vertical padding to the row to help with styling*/
+}
+/*===== ========== =====*/
+
+
+
+/*===========================================*/
 /*===== Nissan Styling - DESKTOP/TABLET =====*/
 h3{
     font-weight: light;
@@ -67,30 +89,40 @@ h6{
     letter-spacing: 0;
     /*"leading"/line-spacing is 17(?)*/
 }
-/*===== ========== =====*/
-
-
 
 /*===== Nissan Logo =====*/
 .logo{
-    margin: 0px 0px 0px 8vw;
-    padding: 0px;
+    margin: 0px;
+    padding-right: 0px;
     background-image: url("assets/IconBG_81x67.png");
     width: 81px;
     height: 67px;
+
 }
 /*===== ========== =====*/
 
 /*===== Vertical Border + "Title"*/
-.brand-styling{
+.title-styling{
+    /*This needs to match the padding-right from the "logo"*/
     margin: 0px;
-    margin-left: 10px;
-    padding: 10px 0px 10px 10px;
-    border-left: solid 2px white;
+    margin-left: 0px;
 
-    font-size: 1.5rem;
+    /*Need to subtract font-size(px) from "logo" height - then add padding evenly to top & bottom to == logo height.*/
+    padding: 0px;    /*right-side padding is just because*/
+    padding-left: 0px;
+    
+
+    font-size: 17px;
     font-weight: 300;
 
+}
+
+.divider{
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: solid 2px white;
+    height: 67px;
+    width: auto;
 }
 /*===== ========== =====*/
 
@@ -99,6 +131,11 @@ h6{
     margin-top: 10vh;
 }
 /*===== ========== =====*/
+
+
+
+/*===========================================*/
+/*===========================================*/
 
 
 
