@@ -13,7 +13,7 @@ html, body {
     overflow-x: hidden;
     line-height: 1; /*removes the default line-height styling that can interfere with precise absolute units.*/
 
-    background-color: #5AB1BB;
+    background-color: #EEEEEE;
 }
 
 p{
@@ -273,9 +273,10 @@ h6{
 
 .bodyGrey_1{
     font-weight: regular;
-    font-size: 13pt;
+    font-size: 11pt;
     color: #5c5c5c;
     letter-spacing: 0;
+    line-height: 1.5;
     /*justify left or centered, paragraph spacing is 10(px?), leading */
 }
 
@@ -284,6 +285,8 @@ h6{
     font-size: 11pt;
     color: #C3002F;
     letter-spacing: 0;
+    line-height: 1.5;
+    
     /*justify left or centered, paragraph spacing is 10(px?), leading */
 }
 
@@ -356,6 +359,7 @@ h6{
 }
 
 .nissanid_branding_undercard{
+    /*Remember to match the width & height to the actual asset dimensions!*/
     margin-top: 30px;
     margin-bottom: 20px;
     width: 87px;
@@ -423,7 +427,6 @@ h6{
 }
 
 .FAQ-link{
-    padding-top: 20px;
     padding-bottom: 30px;
 
     font-weight: 400;
@@ -433,11 +436,45 @@ h6{
     text-decoration: underline;
     display: block;
 }
+
+
 /*===== ========= =====*/
 
 /*===== Footer =====*/
 .bottom-bar{
-    margin-top: 10vh;
+    padding: 25px 20px 10px 20px;
+    background-color:#343434;
+}
+
+.bottom-bar-column{
+    padding: auto;
+    margin: 0px;
+    text-align: center;
+    max-width:min-content;
+}
+
+.footer-link-style{
+    padding: 0px;
+    margin: 0px;
+
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 300;
+    font-size: 11pt;
+    color: #EEEEEE;
+    letter-spacing: 0;
+    text-decoration: underline;
+}
+
+.footer-copyright{
+    font-weight: 400;
+    font-size: 13pt;
+    color: #EEEEEE;
+    letter-spacing: 0;
+    text-decoration: underline;
+    max-width: fit-content;
+    display: inline-flex;
+    white-space: nowrap;
 }
 /*===== END OF @MEDIA =====*/
 }
