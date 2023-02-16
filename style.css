@@ -394,8 +394,9 @@ h6{
 
 .submit-button{
     color: white;
+    border: none;
     background-color: #C3002F;
-    padding: 1.5rem 1.2rem 1.5rem 2.3rem;
+    padding: 1.5rem 2.5rem;
     margin-top: 30px;
     width: 60%;
     font-size: 15px;
@@ -408,10 +409,9 @@ h6{
     text-align: right;
     margin: 0px;
     
-    font-size:15pt;
+    font-size: 15pt;
     font-weight: 800;
     display: inline-block;
-    
 }
 
 .cancel-link{
