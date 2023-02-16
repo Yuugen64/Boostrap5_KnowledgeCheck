@@ -447,10 +447,9 @@ h6{
 }
 
 .bottom-bar-column{
-    padding: auto;
-    margin: 0px;
+    padding: 6px;
     text-align: center;
-    max-width:min-content;
+    max-width: fit-content;
 }
 
 .footer-link-style{
@@ -468,10 +467,11 @@ h6{
 
 .footer-copyright{
     font-weight: 400;
-    font-size: 13pt;
+    font-size: 11pt;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
     color: #EEEEEE;
     letter-spacing: 0;
-    text-decoration: underline;
     max-width: fit-content;
     display: inline-flex;
     white-space: nowrap;
