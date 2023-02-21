@@ -64,20 +64,26 @@
       </div>
     -->
 
+    
     <!--Main Container-->
-    <div class="container">
-      <!--Card Area-->
-      <div class="container-fluid">
-        <div class="row row-cols-3">
-          <div class="col-md-1 col-0"></div>
+    <div class="container-fluid px-0">
 
-          <div class="col-md-6 col-12" style="padding: 0px">
+      
+
+      <!--Card Area-->
+      <div class="container-fluid" >
+
+        
+
+        
+        
+        <div class="row row-cols-2 main-content-row-alignment"><!--This aligns the DESKTOP card on the left side-->
+
+          <div class="col-md-6 col-12 card-column-gutters"><!--This provides the spacing on left/right for mobile column-->
             <div class="card card-styling">
               <div class="card-content-align">
 
-                <div class="nissanid_branding px-0 mx-0">
-
-                </div>
+                <div class="nissanid_branding px-0 mx-0"></div>
                 
                 <h5 class="px-0 mx-0" style="padding: 20px 0px 20px 0px;">Reset Password</h5>
 
@@ -103,30 +109,52 @@
 
                 </div>
 
-                <button class="submit-button">Submit<b class="submit-carrot">></b></button>
+                <div class="container-fluid px-0">
+                  <div class="row desktop-button-row">
+                    <div class="col-5 px-0 .g-0">
+                      <button class="submit-button">Submit<b class="submit-carrot">></b></button>
+                    </div>
+                    <div class="col-1">
 
-                <a class="cancel-link" href="#">Cancel</a>
+                    </div>
+                    <div class="col-5 px-0 .g-0">
+                      <button class="cancel-button">Cancel<b class="submit-carrot">></b></button>
+                    </div>
+                    <div class="col-1">
+
+                    </div>
+                  </div>
+                </div>
+                
+                <!--Mobile link only displays on smaller screens (md and down)-->
+                <a class="cancel-link .d-lg-none .d-xl-none .d-xxl-none" href="#">Cancel</a>
 
               </div>
               <!--End Content Align-->
             </div>
           </div>
 
-          <div class="col-md-5 col-0"></div>
+          <div class="col-auto col-0"></div>
         </div>
         <!--End of the card columns-->
       </div>
       <!--End of the card container-->
 
-      <div class="nissanid_branding_undercard px-0 mx-0"></div>
+      <!--This DIV groups the individual elements and aligns them on the left side-->
+      <div class="FAQ-flavortext">
+        <div class="nissanid_branding_undercard px-0 mx-0"></div>
 
-      <p class="bodyGrey_1" style="padding-bottom: 10px;">
-        Access all your applications with one simple login. For more information about Common ID visit out Owner's Portal
-      </p>
-      <a class="FAQ-link" href="#">FAQ page.</a>
-      
+        <p class="bodyGrey_1" style="padding-bottom: 10px;">
+          Access all your applications with one simple login. For more information about Common ID visit out Owner's Portal
+        </p>
+        <a class="FAQ-link" href="#">FAQ page.</a>
+      </div>
+
+
     </div>
     <!--End of the main container-->
+
+
 
     <div class="container-fluid bottom-bar my-0">
 
