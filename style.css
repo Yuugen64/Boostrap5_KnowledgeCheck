@@ -262,30 +262,46 @@ h6{
 
 /*===== Footer =====*/
 .bottom-bar{
-    padding: 25px 20px 10px 20px;
+    padding: 30px 0px 30px 0px;
     background-color:#343434;
 }
 
+.bottom-bar-row{
+    padding: 0px 165px 0px 165px; /*This is to align the ROW of link-columns on desktop*/
+    margin: 0px 0px 0px 0px; /*This is necessary to REMOVE the default negative margin that was screwing with the alignment on the left*/
+}
+
 .bottom-bar-column{
-    padding: 6px;
-    text-align: center;
-    max-width: fit-content;
+    padding: 0px;
+    margin: 0px;
+    min-width: fit-content; /*This keeps the columns fitting to the links content width*/
 }
 
 .footer-link-style{
-    padding: 0px;
+    padding: 0px 30px 0px 0px;
     margin: 0px;
-
-    text-align: center;
-    white-space: nowrap;
     font-weight: 300;
     font-size: 11pt;
+    white-space: nowrap;
     color: #EEEEEE;
     letter-spacing: 0;
+
     text-decoration: underline;
 }
 
-.footer-copyright{
+.footer-copyright-desktop{
+    padding: 0px;
+    font-weight: 400;
+    font-size: 11pt;
+    white-space: nowrap;
+    color: #EEEEEE;
+    letter-spacing: 0;
+    text-align: end;
+}
+
+
+.footer-copyright-mobile{
+    /*This is not shown on the desktop view*/
     font-weight: 400;
     font-size: 11pt;
     padding-top: 1rem;
@@ -293,7 +309,7 @@ h6{
     color: #EEEEEE;
     letter-spacing: 0;
     max-width: fit-content;
-    display: inline-flex;
+    display: none;
     white-space: nowrap;
 }
 /*===== ========== =====*/
@@ -431,7 +447,7 @@ h6{
 
 /*===== Card Styling =====*/
 .card-column-gutters{
-    padding: 0px 15px 0px 15px; /*This controls the spacing of the "visual" card on left and right in mobile view*/
+    padding: 0px 0px 0px 0px; /*This controls the spacing of the "visual" card on left and right in mobile view*/
 }
 
 .card-styling{
@@ -563,7 +579,21 @@ h6{
     text-decoration: underline;
 }
 
-.footer-copyright{
+.footer-copyright-desktop{
+    font-weight: 400;
+    font-size: 11pt;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    color: #EEEEEE;
+    letter-spacing: 0;
+    max-width: fit-content;
+    display: none;
+    white-space: nowrap;
+}
+
+
+.footer-copyright-mobile{
+    /*This is not shown on the desktop view*/
     font-weight: 400;
     font-size: 11pt;
     padding-top: 1rem;
