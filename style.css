@@ -563,6 +563,10 @@ h6{
     display: block;
 }
 
+.FAQ-flavortext{
+    padding-left: 15px; /*controls alignment on left side*/
+}
+
 .FAQ-link{
     padding-bottom: 30px;
 
@@ -583,10 +587,16 @@ h6{
     background-color:#343434;
 }
 
+.bottom-bar-row{
+    padding: 0px 0px 0px 0px; /*This is to align the ROW of link-columns on desktop*/
+    margin: 0px 0px 0px 0px; /*This is necessary to REMOVE the default negative margin that was screwing with the alignment on the left*/
+}
+
 .bottom-bar-column{
     padding: 6px;
     text-align: center;
     max-width: fit-content;
+    
 }
 
 .footer-link-style{
