@@ -528,6 +528,29 @@ h6{
     display: inline-block;
 }
 
+.cancel-button{
+    color: white;
+    border: none;
+    background-color: #343434;
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+    margin-top: 0px;
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+    align-items: center;
+    display: none;
+}
+
+.button-spacer-column{
+    /*These are the columns to provide padding between the two buttons in the same row - not needed in mobile view*/
+    display: none;
+}
+
+.cancel-button-column{
+    /*this removes the column which will be empty since the button will also NOT be displayed*/
+    display: none;
+}
+
 .cancel-link{
     padding-top: 20px;
     padding-bottom: 30px;
