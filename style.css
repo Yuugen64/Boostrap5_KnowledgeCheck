@@ -138,6 +138,12 @@ h6{
 .main-content-row-alignment{
     margin-left: 150px; /*-15px standard column padding!!! --> For alignment on the left hand side for the "card"*/
 }
+
+.main-content-background{
+    background-image: url("assets/NissanBG_Red_1500x650.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 /*===== ========== =====*/
 
 /*===== Card Styling =====*/
