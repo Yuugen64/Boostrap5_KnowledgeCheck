@@ -12,8 +12,6 @@ html, body {
     height: 100%;
     overflow-x: hidden;
     line-height: 1; /*removes the default line-height styling that can interfere with precise absolute units.*/
-
-    background-color: #EEEEEE;
 }
 
 p{
@@ -135,6 +133,10 @@ h6{
 /*===== ========== =====*/
 
 /*===== Main Content Alignment (DESKTOP) =====*/
+.main-container{
+    background-color: #EEEEEE;
+}
+
 .main-content-row-alignment{
     margin-left: 150px; /*-15px standard column padding!!! --> For alignment on the left hand side for the "card"*/
 }
@@ -142,11 +144,22 @@ h6{
 .main-content-background{
     background-image: url("assets/NissanBG_Red_1500x650.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    height: 400px;
+
+    min-width: 1280px;
+    z-index: 25;
 }
 /*===== ========== =====*/
 
 /*===== Card Styling =====*/
+.lift-container{
+    z-index: 50;
+    display: block;
+    position: absolute;
+    top: 10%;
+}
+
 .card-column-gutters{
     padding: 0px 0px 0px 0px; /*This controls the spacing of the "visual" card on left and right in ****MOBILE**** view*/
 }
@@ -169,7 +182,7 @@ h6{
     background-image: url("assets/Branding_83x7.png");
 }
 .nissanid_branding_undercard{
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 20px;
     width: 87px;
     height: 7px;
@@ -275,6 +288,8 @@ h6{
 .bottom-bar{
     padding: 30px 0px 30px 0px;
     background-color:#343434;
+    z-index: 50;
+    display: block;
 }
 
 .bottom-bar-row{

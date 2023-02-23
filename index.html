@@ -66,12 +66,14 @@
 
     
     <!--Main Container-->
-    <div class="container-fluid main-content-background px-0">
+    <div class="container-fluid main-container px-0">
 
-      
+      <div class="main-content-background"></div><!--Background image-->
 
+
+      <div class="lift-container">
       <!--Card Area-->
-      <div class="container-fluid" >
+      <div class="container-fluid"><!--The "lift container" class z-indexes the card container so that the background can go beneath it-->
 
         
 
@@ -152,42 +154,47 @@
         <a class="FAQ-link" href="#">FAQ page.</a>
       </div>
 
+      <div class="container-fluid bottom-bar">
+
+        <div class="row bottom-bar-row">
+          <div class="col-auto bottom-bar-column">
+            <a href="#" class="footer-link-style">Commonusa.com</a>
+          </div>
+          <div class="col-auto bottom-bar-column">
+            <a href="#" class="footer-link-style">Contact Us</a>
+          </div>
+          <div class="col-auto bottom-bar-column">
+            <a href="#" class="footer-link-style">Legal</a>
+          </div>
+          <div class="col-auto bottom-bar-column">
+            <a href="#" class="footer-link-style">Privacy Policy</a>
+          </div>
+          <!--Align-self-end here is what floats the copywright all the way to the right on the desktop view-->
+          <div class="col align-self-end bottom-bar-column">
+            <p class="footer-copyright-desktop text-end">©Common USA 2023</p>
+          </div>
+          
+          
+        </div>
+  
+        <div class="row text-light">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col footer-copyright-mobile">©Common USA 2023</div>
+        </div>
+  
+      </div>
+
+    </div>
+    <!--End of the main content area-->
+
 
     </div>
     <!--End of the main container-->
 
+  </div>
 
-
-    <div class="container-fluid bottom-bar">
-
-      <div class="row bottom-bar-row">
-        <div class="col-auto bottom-bar-column">
-          <a href="#" class="footer-link-style">Commonusa.com</a>
-        </div>
-        <div class="col-auto bottom-bar-column">
-          <a href="#" class="footer-link-style">Contact Us</a>
-        </div>
-        <div class="col-auto bottom-bar-column">
-          <a href="#" class="footer-link-style">Legal</a>
-        </div>
-        <div class="col-auto bottom-bar-column">
-          <a href="#" class="footer-link-style">Privacy Policy</a>
-        </div>
-        <!--Align-self-end here is what floats the copywright all the way to the right on the desktop view-->
-        <div class="col align-self-end bottom-bar-column">
-          <p class="footer-copyright-desktop text-end">©Common USA 2023</p>
-        </div>
-        
-        
-      </div>
-
-      <div class="row text-light">
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col footer-copyright-mobile">©Common USA 2023</div>
-      </div>
-
-    </div>
+    
 
     <!--============================================================================================================================-->
     <!--END OF PAGE-->
