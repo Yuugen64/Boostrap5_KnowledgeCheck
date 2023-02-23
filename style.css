@@ -331,13 +331,322 @@ h6{
 /*===== Bootstrap 5 breakpoints =====*/
 /*These go DOWN, i.e. they apply to the specific query and ALL LOWER screen sizes!*/
 /*(xs breakpoint) X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {  }
+@media (max-width: 575.98px) { 
+    
+/*===== Bootstrap Alternatives =====*/
+.header{
+    padding: 0px;
+    margin: 0px;
+}
+
+.header-row{
+    padding: 10px 0px 10px 0px; /*Adding some vertical padding to the row to help with styling*/
+}
+/*===== ========== =====*/
+
+    /*===== Nissan Styling - MOBILE =====*/
+    h3{
+        font-weight: 300;
+        font-size: 28pt;
+        color:#3472e5;
+        letter-spacing: 0;
+        
+        /*justify left,  can "inline" white color per element*/
+    }
+    
+    h5{
+        font-weight: 300;
+        font-size: 16pt;
+        color:#3472e5;
+        letter-spacing: 0;
+        
+        /*justify left, can "inline" white color per element*/
+    }
+    
+    h6{
+        font-weight: 300;
+        font-size: 14pt;
+        color:#3472e5;
+        letter-spacing: 0;
+        
+        /*justify left, can "inline" white color per element*/
+    }
+
+.bodyGrey_1{
+    font-weight: regular;
+    font-size: 11pt;
+    color: #5c5c5c;
+    letter-spacing: 0;
+    line-height: 1.5;
+    /*justify left or centered, paragraph spacing is 10(px?), leading */
+}
+
+.bodyRed_1{
+    font-weight: regular;
+    font-size: 11pt;
+    color: #C3002F;
+    letter-spacing: 0;
+    line-height: 1.5;
+    
+    /*justify left or centered, paragraph spacing is 10(px?), leading */
+}
+
+.passCriteria{
+    padding-left: 40px;
+}
+
+.textLink{
+    font-weight: regular;
+    font-size: 14pt;
+    color: #343434;
+    letter-spacing: 0;
+    /*"leading"/line-spacing is 17(?)*/
+}
+
+/*===== Nissan Logo =====*/
+.logo{
+    margin: 0px;
+    padding-right: 0px;
+    background-image: url("assets/IconBG_49x40.png");
+
+    /*At 60% size of the desktop variant*/
+    width: 49px;
+    height: 40px;
+
+}
+.logo_spacer{
+    padding: 0px;
+    margin: 0px;
+    width: 15px;
+}
+/*===== ========== =====*/
+
+/*===== Vertical Border + "Title"*/
+.title-styling{
+    margin: 0px;
+    padding: 0px;
+    padding-top: 12px; /*This has to be set manually based on *logo height* as largest reference relative to text size, to center the title - somehow flex-wrap was interfering with "align-items: center"*/
+
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.divider{
+    margin-left: 15px;
+    padding-left: 15px;
+    border-left: solid 2px white;
+    height: 40px;
+    width: auto;
+}
+/*===== ========== =====*/
+
+/*===== Main Content Alignment (DESKTOP) =====*/
+.main-content-row-alignment{
+    margin-left: 0px; /*For alignment on the left hand side for the "card"*/
+    margin-right: 0px;
+}
+/*===== ========== =====*/
+
+/*===== Card Styling =====*/
+.card-column-gutters{
+    padding: 0px 0px 0px 0px; /*This controls the spacing of the "visual" card on left and right in mobile view*/
+}
+
+.card-styling{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.card-mobile-center{
+    justify-content: center;
+}
+
+.card-content-align{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nissanid_branding{
+    margin-top: 40px;
+    width: 87px;
+    height: 7px;
+    
+    background-image: url("assets/Branding_83x7.png");
+}
+
+.nissanid_branding_undercard{
+    /*Remember to match the width & height to the actual asset dimensions!*/
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 87px;
+    height: 7px;
+    
+    background-image: url("assets/Branding_83x7.png");
+}
+
+.field-styling{
+    /*total height of element is roughly 35px*/
+    width: 100%;
+    height: 50px;
+    
+    border: 2px solid #DADADA;
+    border-radius: 0px;
+    margin-top: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+
+    font-size: 11pt; /*the same as the body font sizing(?)*/
+    font-weight: 400;
+    color: #5c5c5c;
+}
+
+.label-styling{
+    margin-top: 20px; /*This separates the field labels from the rest of the content*/
+
+    font-weight: 400;
+    font-size: 11pt;
+    color: #5c5c5c;
+    letter-spacing: 0;
+}
+
+.submit-button{
+    color: white;
+    border: none;
+    background-color: #C3002F;
+    padding: 1.5rem 2.5rem;
+    margin-top: 30px;
+    width: 60%;
+    font-size: 15px;
+    text-align: left;
+    align-items: center;
+    display: block;
+}
+
+.submit-carrot{
+    text-align: right;
+    margin: 0px;
+    
+    font-size: 15pt;
+    font-weight: 800;
+    display: inline-block;
+}
+
+.cancel-button{
+    color: white;
+    border: none;
+    background-color: #343434;
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+    margin-top: 0px;
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+    align-items: center;
+    display: none;
+}
+
+.button-spacer-column{
+    /*These are the columns to provide padding between the two buttons in the same row - not needed in mobile view*/
+    display: none;
+}
+
+.cancel-button-column{
+    /*this removes the column which will be empty since the button will also NOT be displayed*/
+    display: none;
+}
+
+.cancel-link{
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    font-weight: 400;
+    font-size: 13pt;
+    color: #5c5c5c;
+    letter-spacing: 0;
+    text-decoration: underline;
+    display: block;
+}
+
+.FAQ-flavortext{
+    padding-left: 15px; /*controls alignment on left side*/
+}
+
+.FAQ-link{
+    padding-bottom: 30px;
+
+    font-weight: 400;
+    font-size: 13pt;
+    color: #5c5c5c;
+    letter-spacing: 0;
+    text-decoration: underline;
+    display: block;
+}
+
+
+/*===== ========= =====*/
+
+/*===== Footer =====*/
+.bottom-bar{
+    padding: 25px 20px 10px 20px;
+    background-color:#343434;
+}
+
+.bottom-bar-row{
+    padding: 0px 0px 0px 0px; /*This is to align the ROW of link-columns on desktop*/
+    margin: 0px 0px 0px 0px; /*This is necessary to REMOVE the default negative margin that was screwing with the alignment on the left*/
+}
+
+.bottom-bar-column{
+    padding: 6px;
+    text-align: center;
+    max-width: fit-content;
+    
+}
+
+.footer-link-style{
+    padding: 0px;
+    margin: 0px;
+
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 300;
+    font-size: 11pt;
+    color: #EEEEEE;
+    letter-spacing: 0;
+    text-decoration: underline;
+}
+
+.footer-copyright-desktop{
+    font-weight: 400;
+    font-size: 11pt;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    color: #EEEEEE;
+    letter-spacing: 0;
+    max-width: fit-content;
+    display: none;
+    white-space: nowrap;
+}
+
+
+.footer-copyright-mobile{
+    /*This is not shown on the desktop view*/
+    font-weight: 400;
+    font-size: 11pt;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    color: #EEEEEE;
+    letter-spacing: 0;
+    max-width: fit-content;
+    display: inline-flex;
+    white-space: nowrap;
+}
+/*===== END OF @MEDIA =====*/
+ }
 
 /*=============================================================================================================*/
 /* MOBILE-PHONE BREAKPOINT                                                                                     */
 /*=============================================================================================================*/
 /*(sm breakpoint)  Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px) and (min-width: 576px){ 
 
 /*===== Bootstrap Alternatives =====*/
 .header{
@@ -653,7 +962,7 @@ h6{
 /* TABLET BREAKPOINT                                                                                           */
 /*=============================================================================================================*/
 /*(md breakpoint)  Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
+@media (max-width: 991.98px) and (min-width: 768px) { 
     /*===== Bootstrap Alternatives =====*/
 .header{
     padding: 0px;
