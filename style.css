@@ -143,9 +143,9 @@ h6{
 
 .main-content-background{
     background-image: url("assets/NissanBG_Red_1500x650.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 450px; /*Sets the height of the backgorund image*/
 
     min-width: 1280px;
     z-index: 25;

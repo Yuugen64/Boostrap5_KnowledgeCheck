@@ -65,8 +65,8 @@
     -->
 
     
-    <!--Main Container-->
-    <div class="container-fluid main-container px-0">
+    <!--Main Container - ID is used for footer calc-->
+    <div id="container" class="container-fluid main-container px-0">
 
       <div class="main-content-background"></div><!--Background image-->
 
@@ -109,6 +109,24 @@
                   <p class="label-styling">Confirm Password*</p>
                   <input class="field-styling"></input>
 
+                  <p class="label-styling">New Password*</p>
+                  <input class="field-styling"></input>
+
+                  <p class="label-styling">Confirm Password*</p>
+                  <input class="field-styling"></input>
+
+                  <p class="label-styling">New Password*</p>
+                  <input class="field-styling"></input>
+
+                  <p class="label-styling">Confirm Password*</p>
+                  <input class="field-styling"></input>
+
+                  <p class="label-styling">New Password*</p>
+                  <input class="field-styling"></input>
+
+                  <p class="label-styling">Confirm Password*</p>
+                  <input class="field-styling"></input>
+
                 </div>
 
                 <div class="container-fluid px-0">
@@ -144,7 +162,7 @@
       </div>
       <!--End of the card container-->
 
-      <!--This DIV groups the individual elements and aligns them on the left side-->
+      <!--This DIV groups the individual elements after the card and aligns them on the left side-->
       <div class="FAQ-flavortext">
         <div class="nissanid_branding_undercard px-0 mx-0"></div>
 
@@ -154,7 +172,8 @@
         <a class="FAQ-link" href="#">FAQ page.</a>
       </div>
 
-      <div class="container-fluid bottom-bar">
+      <!--Footer Container-->
+      <div id="footer" class="container-fluid bottom-bar">
 
         <div class="row bottom-bar-row">
           <div class="col-auto bottom-bar-column">
@@ -184,6 +203,7 @@
         </div>
   
       </div>
+      <!--End of Footer-->
 
     </div>
     <!--End of the main content area-->
@@ -228,5 +248,17 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <!--Ravi's Footer Fix-->  
+	  <script type="text/javascript">
+		  var obj=document.getElementById("container");   //ad id to the container
+		  var els=obj.getElementsByTagName("input");      //&& (window.navigator.pointerEnabled || navigator.maxTouchPoints >=1) 
+		  if(window.outerHeight>1024  && els.length<5){
+			  var footer=document.getElementById("footer"); //add id to the element
+			  footer.style.position="fixed";
+			  footer.style.bottom=0;
+		  }
+	  </script>
+    <!--End Footer Fix-->
   </body>
 </html>
