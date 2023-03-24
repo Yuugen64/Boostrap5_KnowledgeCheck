@@ -103,6 +103,73 @@
                       <li class="bodyRed_1">Special characters (!, $, #, %, etc.)</li>
                     </ul>
                   
+
+                    <!--<img id="dd-icon" src="assets/dropdown.png"/>-->
+
+
+
+
+
+
+
+
+
+
+                    <div id="dropdown-container" class="dropdown-container">
+                      <div id="drop-button" class="drop-button">
+                        <span>Select</span>
+                        <img id="dd-icon" src="assets/dropdown.png"/>
+                      </div>
+
+                      <div class="content">
+                        <div class="search">
+                          <ul id="options" class="options"><!--Iteratively Populated--></ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <script>
+                      const dropdown = document.getElementById("dropdown-container");
+                      const button = document.getElementById("drop-button");
+                      const options = document.getElementById("options")
+
+                      //Add the listener to the button itself
+                      button.addEventListener("click", () => {
+                        dropdown.classList.toggle("active");
+                      })
+
+                      //Placeholder data - preferably consider using a JSON
+                      let data = ["Selection 1", "Selection 2", "Selection 3", "Selection 4", "Selection 5", "Selection 6", "Selection 7", "Selection 8"];
+                    
+                      //Grabs the data from the array (hard-coded) and then pre-populates the dropdown.
+                        addData = () => {
+                        data.forEach(entry => {
+                          let li = '<li onclick="updateName(this)">'+entry+'</li>';
+                          options.insertAdjacentHTML("beforeend", li);
+                        })
+                      };
+
+                      addData();
+
+                      //This updates the selection box content with the selection from the expanded dropdown
+                      updateName = (selectedLi) => {
+                        button.firstElementChild.innerText=selectedLi.innerText;
+                      };
+                    
+                    </script>
+
+
+
+
+
+
+
+
+
+
+
+
                     <!--DON"T ACTUALLY IMPLEMENT LIKE THIS - ONLY FOR TESTING THE TOGGLE FUNCTIONALITY!-->
                     <div class="password-container">
                       <input id="password" type="password" placeholder="Password Here"></input>

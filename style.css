@@ -216,6 +216,98 @@ h6{
 
 
 
+/*===== DROPDOWN STYLING =====*/
+.dropdown-container{
+    width: 100%;
+    margin: 30px auto 0;
+}
+.drop-button, .options li{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    position: relative;
+}
+.drop-button span{
+    height: 65px;
+    width: 100%;
+    font-size: 22px;
+    display: flex;
+    padding: 20px 20px 0px 20px; /*controls the alignment of the span w/ icon based on height of selector*/
+    border-radius: 7px;
+    background: #EEEEEE;
+    justify-content: space-between;
+}
+#dd-icon{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    color: lightgray;
+    transition: transform 0.2s ease-in-out; /*Controls the behavior of the toggled animation later*/
+    position: absolute;
+    right: 20px;
+}
+
+/*This controls the width & styling of the "expanded dropdown list area"*/
+.content{
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 7px;
+    background: #EEEEEE;
+    display: none; /*this hides the expansion by default*/
+}
+/*Sets the max height of the expanded dropdown, and hides overflow*/
+.content .options{
+    margin-top: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+/*This toggles 'display: hidden' OFF essentially*/
+.dropdown-container.active .content{
+    display: block;
+}
+
+/*This is the animation for when the "active" class is toggled*/
+.dropdown-container.active #dd-icon{
+    transform: rotate(-180deg);
+}
+
+
+
+/*The following options customize the scrollbar on the expanded*/
+.options::-webkit-scrollbar{
+    width: 7px;
+}
+.options::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 2px;
+}
+.options::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 2px;
+}
+
+/*These control the expanded li styling*/
+.options li{
+    height: 50px;
+    padding: 0px 10px 0px 10px; /*This controls the padding for the list items WITHIN the expanded dropdown*/
+    font-size: 21px;
+}
+.options li:hover{
+    background: #f2f2f2;
+}
+/*===== ================ =====*/
+
+
+
+
+
+
+
+
+
+
+
 /*NEW Field Styling with Toggle*/
 .password-container{
     width: 100%;
@@ -234,6 +326,9 @@ h6{
     font-size: 11pt; /*the same as the body font sizing(?)*/
     font-weight: 400;
     color: #5c5c5c;
+}
+#password:focus{
+    outline: none; /*disables the selection outline that comes by default*/
 }
 
 #icon{
