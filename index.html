@@ -103,30 +103,35 @@
                       <li class="bodyRed_1">Special characters (!, $, #, %, etc.)</li>
                     </ul>
                   
-                  <p class="label-styling">New Password*</p>
-                  <input class="field-styling"></input>
+                    <!--DON"T ACTUALLY IMPLEMENT LIKE THIS - ONLY FOR TESTING THE TOGGLE FUNCTIONALITY!-->
+                    <div class="password-container">
+                      <input id="password" type="password" placeholder="Password Here"></input>
+                      <img id="icon" onclick="toggle()" src="assets/eyeOn.png">
+                    </div>
+
+                    <script>
+                      var state=false;
+                      function toggle(){
+                        if(!state){
+                          document.getElementById("password").setAttribute("type", "text");
+                          document.getElementById("icon").src = 'assets/eyeOff.png';
+                          state=true;
+                        }else{
+                          document.getElementById("password").setAttribute("type", "password");
+                          document.getElementById("icon").src = 'assets/eyeOn.png';
+                          state=false;
+                        }
+                      }
+                    </script>
+                    <!--DON"T ACTUALLY IMPLEMENT LIKE THIS - ONLY FOR TESTING THE TOGGLE FUNCTIONALITY!-->
+
+  
 
                   <p class="label-styling">Confirm Password*</p>
                   <input class="field-styling"></input>
 
-                  <p class="label-styling">New Password*</p>
-                  <input class="field-styling"></input>
-
-                  <p class="label-styling">Confirm Password*</p>
-                  <input class="field-styling"></input>
-
-                  <p class="label-styling">New Password*</p>
-                  <input class="field-styling"></input>
-
-                  <p class="label-styling">Confirm Password*</p>
-                  <input class="field-styling"></input>
-
-                  <p class="label-styling">New Password*</p>
-                  <input class="field-styling"></input>
-
-                  <p class="label-styling">Confirm Password*</p>
-                  <input class="field-styling"></input>
-
+                  
+                  
                 </div>
 
                 <div class="container-fluid px-0">

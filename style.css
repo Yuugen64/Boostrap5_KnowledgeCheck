@@ -214,6 +214,41 @@ h6{
     letter-spacing: 0;
 }
 
+
+
+/*NEW Field Styling with Toggle*/
+.password-container{
+    width: 100%;
+    position: relative;
+}
+
+#password{
+    width: 100%;
+    height: 50px;
+    
+    border: 2px solid #DADADA;
+    border-radius: 0px;
+    margin-top: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+
+    font-size: 11pt; /*the same as the body font sizing(?)*/
+    font-weight: 400;
+    color: #5c5c5c;
+}
+
+#icon{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 40%;
+    right: 4%;
+    cursor: pointer;
+    color: lightgray;
+}
+/*=============================*/
+
+
+
 .desktop-button-row{
     padding: 30px 0px 40px 0px;
     margin-left: 0px;
